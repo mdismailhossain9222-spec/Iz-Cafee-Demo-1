@@ -45,13 +45,15 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8">
         <Link to="/" className="flex items-center gap-3">
-          <span className="flex h-10 w-10 items-center justify-center rounded-full border border-gold/70 font-serif text-sm text-gold">
-            IZ
-          </span>
-          <span className={`font-serif text-xl tracking-wide ${light ? "text-cream" : "text-cream"}`}>
-            Pâtisserie
-          </span>
-        </Link>
+  <img 
+    src="/logo.png" 
+    alt="IZ Logo" 
+    className="h-10 w-auto object-contain brightness-200 invert" 
+  />
+  <span className={`font-serif text-xl tracking-wide ${light ? "text-cream" : "text-cream/90"}`}>
+    Pâtisserie
+  </span>
+</Link>
 
         <div className="hidden items-center gap-8 lg:flex">
           {links.map((l) => (
